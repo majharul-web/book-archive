@@ -8,7 +8,7 @@ const loadData = async () => {
   //api fetch
   // const url = `http://openlibrary.org/search.json?q=javascript`;
 
-  const url = `http://openlibrary.org/search.json?q=${searchText}`;
+  const url = `https://openlibrary.org/search.json?q=${searchText}`;
   const res = await fetch(url);
   const data = await res.json();
   showData(data.docs);
