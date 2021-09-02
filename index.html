@@ -15,6 +15,36 @@
     />
   </head>
   <body>
+    <main class="container my-5">
+      <!-- input field -->
+      <section>
+        <h1 class="text-center my-3">Search your favorite book</h1>
+        <div class="input-group mb-3 w-75 mx-auto">
+          <input type="text" class="form-control" placeholder="python.." id="search" />
+
+          <button onclick="loadData()" class="btn btn-outline-primary mx-2" id="search-btn">Search</button>
+        </div>
+      </section>
+
+      <!-- show output -->
+      <section>
+        <div id="book-container" class="row row-cols-1 row-cols-md-4 g-4">
+          <!-- single item -->
+          <!-- <div class="col">
+            <div class="card my-4">
+              <img class="img-thumbnail" src="Bangladesh.svg.png" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Bangladesh</h5>
+                <p class="card-text">Capital: <span class="fw-bold">Dakha</span></p>
+                <p class="card-text">Ppulation: <span class="fw-bold">16m</span></p>
+                <p class="card-text">Religion: <span class="fw-bold">Islam</span></p>
+                <button class="btn btn-info fw-bold text-white">See less</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
     <!-- main js -->
     <script src="js/main.js"></script>
   </body>
