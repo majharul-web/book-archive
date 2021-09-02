@@ -24,10 +24,22 @@
 
           <button onclick="loadData()" class="btn btn-outline-primary mx-2" id="search-btn">Search</button>
         </div>
-      </section>
 
-      <!-- show output -->
+        <!-- spinner -->
+        <div class="d-flex justify-content-center d-none" id="spinner">
+          <div class="spinner-border text-danger d" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </section>
+      <!-- show error -->
+      <div id="error-div"></div>
+      <!-- show Data -->
       <section>
+        <!-- total result qty-->
+        <h3 id="total-result"></h3>
+
+        <!-- result container -->
         <div id="book-container" class="row row-cols-1 row-cols-md-4 g-4">
           <!-- single item -->
           <!-- <div class="col">
