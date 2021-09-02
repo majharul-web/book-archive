@@ -58,16 +58,15 @@ const showData = (bookList) => {
         }-M.jpg" alt="..." />
         <div class="card-body">
             <h5 class="card-title">Book Name:${book.title}</h5>
+            <p class="card-text">Writer: 
+            <span class="fw-bold">${book.author_name[0] ? book.author_name[0] : 'not available'}</span>
+            </p>
             <p class="card-text">First-Published: 
             <span class="fw-bold">${book.first_publish_year}</span>
             </p>
             <p class="card-text">Publisher: 
-            <span class="fw-bold">${book.publisher[0] ? book.publisher[0] : ''}</span>
-            </p>
-            <p class="card-text">Writer: 
-            <span class="fw-bold">${book.author_name[0] ? book.author_name[0] : ''}</span>
-            </p>
-            
+            <span class="fw-bold">${book.publisher[0] ? book.publisher[0] : 'not available'}</span>
+            </p>  
         </div>
     </div>
     `;
